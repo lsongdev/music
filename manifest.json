@@ -1,0 +1,27 @@
+{
+  "name": "Lsong’s Music",
+  "short_name": "Music",
+  "description": "Listen music from everywhere.",
+  "id": "?type=music",
+  "start_url": "https://lsong.org/music",
+  "display": "standalone",
+  "theme_color": "#f60c3e",
+  "background_color": "#f60c3e",
+  "icons": [
+    {
+      "src": "https://lsong.org/icon-x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://lsong.org/icon-x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "music"
+  ]
+}
