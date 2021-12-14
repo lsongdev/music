@@ -1,0 +1,59 @@
+@import url(//lsong.org/css/stylesheet.css);
+@import url(//lsong.org/stylesheets/list.css);
+@import url(//lsong.org/stylesheets/panel.css);
+@import url(//lsong.org/stylesheets/button.css);
+
+.search input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.album-title,
+.track-title {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.albums ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  overflow: auto;
+}
+
+.albums ::-webkit-scrollbar {
+  display: none;
+}
+
+.album {
+  width: 120px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.album li {
+  display: 1;
+}
+
+.album img {
+  width: 120px;
+  height: 120px;
+}
+
+.track {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.list-item-leading {
+  width: 1em;
+}

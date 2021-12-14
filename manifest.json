@@ -1,0 +1,27 @@
+{
+  "name": "Liu Song’s Music",
+  "short_name": "Lsong’s Music",
+  "description": "Lsong’s Music Application",
+  "id": "?type=music",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f00",
+  "background_color": "#efefef",
+  "icons": [
+    {
+      "src": "https://lsong.org/icon-x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://lsong.org/icon-x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "music"
+  ]
+}
