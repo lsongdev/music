@@ -57,3 +57,14 @@
 .list-item-leading {
   width: 1em;
 }
+
+mini-player {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  color: #fff;
+  z-index: 999;
+  padding-bottom: env(safe-area-inset-bottom);
+  background-color: rgba(0, 0, 0, 0.85);
+}

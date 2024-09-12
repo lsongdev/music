@@ -136,17 +136,10 @@ class MiniPlayer extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .player {
-          left: 0;
-          bottom: 0;
-          right: 0;
+          gap: 10px;
           margin: auto;
-          position: fixed;
           padding: 10px;
           display: flex;
-          z-index: 999;
-          background-color: rgba(0, 0, 0, 0.85);
-          color: #fff;
-          gap: 10px;
         }
 
         .player-left {
@@ -170,6 +163,7 @@ class MiniPlayer extends HTMLElement {
         }
 
         .player-main {
+          gap: 10px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -281,7 +275,6 @@ class MiniPlayer extends HTMLElement {
         .player-prev,
         .player-play,
         .player-next {
-          color: white;
           width: 20px;
           height: 20px;
           cursor: pointer;
