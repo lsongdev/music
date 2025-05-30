@@ -4,14 +4,14 @@
 @import url(//lsong.org/stylesheets/button.css);
 
 html {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body {
-  height: 100vh;
-  overflow: auto;
-  border: 10px solid #f60c3e;
-  padding-bottom: 200px;
+  /* height: 100vh; */
+  /* overflow: auto; */
+  /* border: 10px solid #f60c3e; */
+  /* padding-bottom: 200px; */
 }
 
 a, .album, .list-item-headline {
@@ -81,5 +81,5 @@ mini-player {
   color: #fff;
   z-index: 999;
   padding-bottom: env(safe-area-inset-bottom);
-  background-color: #f60c3e;
+  background-color: rgba(0, 0, 0, 0.7);
 }
