@@ -74,6 +74,12 @@ a, .album, .list-item-headline {
   margin: 1em 0;
 }
 
+.sentinel {
+  text-align: center;
+  padding: 1em 0;
+  color: #888;
+}
+
 .list-item-leading {
   width: 1em;
 }

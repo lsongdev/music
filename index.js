@@ -24,11 +24,28 @@ const Track = ({ id, track, onClick }) => {
 
 const Playlist = ({ onClick, playlist, hasMore, loadingMore, onLoadMore }) => {
   if (!playlist) return;
+  const [sentinel, setSentinel] = useState(null);
+
+  useEffect(() => {
+    if (!sentinel || !hasMore || loadingMore) return;
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        onLoadMore();
+      }
+    }, { rootMargin: '200px' });
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [sentinel, hasMore, loadingMore, onLoadMore]);
+
   return h('div', {}, [
     h('h3', null, playlist.name),
     h(List, {}, playlist.tracks.map((track, i) =>
       h(Track, { id: i + 1, track, onClick: () => onClick(track, i, playlist) }),
     )),
+    hasMore && h('div', {
+      ref: setSentinel,
+      className: 'sentinel'
+    }, loadingMore ? '加载中...' : ''),
     hasMore && h('button', {
       className: 'load-more button',
       onClick: onLoadMore,
