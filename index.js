@@ -45,7 +45,7 @@ const Playlist = ({ onClick, playlist, hasMore, loadingMore, onLoadMore }) => {
     hasMore && h('div', {
       ref: setSentinel,
       className: 'sentinel'
-    }, loadingMore ? '加载中...' : ''),
+    }),
     hasMore && h('button', {
       className: 'load-more button',
       onClick: onLoadMore,
