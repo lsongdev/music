@@ -25,6 +25,11 @@ export const playlist_detail = async (id) => {
   return playlist;
 };
 
+export const playlist_tracks = async (id, limit = 30, offset = 0) => {
+  const { songs } = await request(`${API}/playlist/track/all?id=${id}&limit=${limit}&offset=${offset}`);
+  return songs;
+};
+
 export const playlist_highquality = async () => {
   const { playlists } = await request(`${API}/top/playlist/highquality`);
   return playlists;
@@ -50,8 +55,8 @@ export const lyric = async (id) => {
   return { lyric: lrc, klyric, tlyric };
 };
 
-export const search = async (keyword, type = 1) => {
-  const { result } = await request(`${API}/search?keywords=${keyword}&type=${type}`);
+export const search = async (keyword, type = 1, limit = 30, offset = 0) => {
+  const { result } = await request(`${API}/search?keywords=${keyword}&type=${type}&limit=${limit}&offset=${offset}`);
   return result;
 };
 

@@ -69,6 +69,11 @@ a, .album, .list-item-headline {
   position: relative;
 }
 
+.load-more {
+  width: 100%;
+  margin: 1em 0;
+}
+
 .list-item-leading {
   width: 1em;
 }
