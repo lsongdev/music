@@ -1,5 +1,5 @@
-import { ready } from 'https://lsong.org/scripts/dom.js';
-import { serialize } from 'https://lsong.org/scripts/form.js';
+import { ready } from 'https://lsong.org/scripts/dom/index.js';
+import { serialize } from 'https://lsong.org/scripts/dom/form.js';
 import { h, render, useState, useEffect, List, ListItem } from 'https://lsong.org/scripts/react/index.js';
 import { playlist_top, playlist_detail, playlist_tracks, search, get_song_url, get_song_urls, lyric } from './163-music.js';
 import './player.js';
