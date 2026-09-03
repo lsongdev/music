@@ -19,7 +19,6 @@
 }
 
 html {
-  min-width: 280px;
   background: var(--music-bg);
   scroll-padding-bottom: 160px;
   -webkit-text-size-adjust: 100%;
@@ -27,12 +26,7 @@ html {
 
 body {
   box-sizing: border-box;
-  width: 100%;
-  min-width: 280px;
-  max-width: none;
   min-height: 100vh;
-  margin: 0;
-  padding: 0 32px calc(156px + env(safe-area-inset-bottom, 0px));
   background: var(--music-bg);
   color: var(--music-ink);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
@@ -375,9 +369,6 @@ mini-player {
 }
 
 @media (max-width: 640px) {
-  body { padding-inline: max(18px, env(safe-area-inset-left, 0px)) max(18px, env(safe-area-inset-right, 0px)); }
-  .site-header nav a { padding: 8px 10px; font-size: 13px; }
-  body > .content { padding-top: 24px; }
   #hello { padding: 24px; margin-bottom: 24px; border-radius: 16px; }
   #hello .headline { font-size: 13px; line-height: 1.8; }
   #app .search { margin-bottom: 26px; }
